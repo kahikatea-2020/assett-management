@@ -1,0 +1,122 @@
+{
+  "assetts": [
+    {
+      "id": 0,
+      "type": "access-point",
+      "host-name": "DEVAP01",
+      "ip-address": "192.168.1.15",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/app.png"
+    },
+    {
+      "id": 1,
+      "type": "server",
+      "host-name": "DEVDC01",
+      "ip-address": "192.168.1.200",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/server.png"
+    },
+    {
+      "id": 2,
+      "type": "printer",
+      "host-name": "DEVNP01",
+      "ip-address": "192.168.1.201",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/printer.png"
+    },
+    {
+      "id": 3,
+      "type": "laptop",
+      "host-name": "DEVNB01",
+      "ip-address": "192.168.1.21",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/laptop.png"
+    },
+    {
+      "id": 4,
+      "type": "laptop",
+      "host-name": "DEVNB02",
+      "ip-address": "192.168.1.22",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/laptop.png"
+    },
+    {
+      "id": 5,
+      "type": "desktop",
+      "host-name": "DEVPC01",
+      "ip-address": "192.168.1.25",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/desktop.png"
+    },
+    {
+      "id": 6,
+      "type": "desktop",
+      "host-name": "DEVPC02",
+      "ip-address": "192.168.1.26",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/desktop.png"
+    },
+    {
+      "id": 7,
+      "type": "desktop",
+      "host-name": "DEVPC03",
+      "ip-address": "192.168.1.24",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/desktop.png"
+    },
+    {
+      "id": 8,
+      "type": "tablet",
+      "host-name": "DEVTBL01",
+      "ip-address": "192.168.1.23",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/desktop.png"
+    },
+    {
+      "id": 9,
+      "type": "mobile",
+      "host-name": "DEVMOB01",
+      "ip-address": "192.168.1.28",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/mobile.png"
+    },
+    {
+      "id": 10,
+      "type": "mobile",
+      "host-name": "DEVMOB02",
+      "ip-address": "192.168.1.30",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/mobile.png"
+    },
+    {
+      "id": 11,
+      "type": "mobile",
+      "host-name": "DEVMOB03",
+      "ip-address": "192.168.1.31",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/mobile.png"
+    },
+    {
+      "id": 12,
+      "type": "mobile",
+      "host-name": "DEVMOB01",
+      "ip-address": "192.168.1.32",
+      "subnet-mask": "255.255.255.0",
+      "default-gateway": "192.168.1.1",
+      "image": "/images/mobile.png"
+    }
+
+  ]
+}
