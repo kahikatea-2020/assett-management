@@ -1,9 +1,10 @@
-<div class="assets">
-  testing
+<section class="hero">
+  <div class="assets">
   {{#each assetts}}
   <div class="assets-list">
-    <a href="/assetts/{{id}}"><img src="{{image}}"><h2>{{type}}</h2><h2>{{live}}</h2>
-//link, image, type, live/notlive
+    <a href="/assetts/{{id}}"><img src="{{image}}"><h2>{{type}}</h2><h2>live status:{{live}}</h2>
+  
   </div>
 {{/each}}
 </div>
+</section>
