@@ -12,7 +12,7 @@ routes.get('/foo', (req, res) => {
 
 // GET
 routes.get('/', (req, res) => {
-  res.redirect(`/assets`)
+  res.redirect('/assets')
 })
 
 // ASSETTS
