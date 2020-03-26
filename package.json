@@ -1,0 +1,35 @@
+{
+  "name": "assett-management",
+  "version": "1.0.1",
+  "description": "Riders project",
+  "main": "index.js",
+  "author": "EDA",
+  "license": "ISC",
+  "scripts": {
+    "debug": "nodemon --inspect index --ignore data.json",
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node index"
+  },
+  "homepage": "https://github.com/kahikatea-2020/assett-management/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahikatea-2020/assett-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kahikatea-2020/assett-management/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "data.json"
+    ]
+  }
+}
