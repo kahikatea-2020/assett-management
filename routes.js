@@ -30,6 +30,18 @@ routes.get('/assets', (req, res) => {
   })
 })
 
+// GET /assets/:id
+
+routes.get('assets/:id', (req, res) => {
+  const index = Number(req.params.id) 
+  const filename = path.join(__dirname, 'data.json')
+  fs.readFile(filename, 'utf-8', (err, contents) => {
+    if (err) return console.log(err)
+    const json = JSON.parse(contents)
+    const asset = json.assetts
+  })
+})
+
 
 
 
