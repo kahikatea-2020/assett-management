@@ -7,7 +7,7 @@
       "ip-address": "192.168.1.15",
       "subnet-mask": "255.255.255.0",
       "default-gateway": "192.168.1.1",
-      "image": "/images/app.png",
+      "image": "/images/ap.png",
       "live": false
     },
     {
