@@ -1,7 +1,15 @@
 <div>
     <h1>{{type}}</h1>
     <ul class="asset-view">
-        {{#each assetts}}
+        <div>Host Name: {{host_name}}</div>
+        <div>IP Address: {{ip_address}}</div>
+        <div>Subnet Mask: {{subnet_mask}}</div>
+        <div>Default Gateway: {{default_gateway}}</div>
+        <div><img src="{{image}}" alt="{{type}}"></div>
+        <div>Live: {{live}}</div>
+        <a href="/assets/edit/{{id}}">Edit</a>
+
+        {{!-- {{#each assetts}}
         <li>
             <p>{{type}}</p>
         </li>
@@ -24,5 +32,5 @@
             <p>{{live}}</p>
         </li>
         {{/each}}
-    </ul>
+    </ul> --}}
 </div>

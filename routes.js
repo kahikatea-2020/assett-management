@@ -15,7 +15,7 @@ routes.get('/', (req, res) => {
   res.redirect('/assets')
 })
 
-// ASSETTS
+// ASSETS
 
 routes.get('/assets', (req, res) => {
   const filename = path.join(__dirname, 'data.json')
@@ -32,8 +32,8 @@ routes.get('/assets', (req, res) => {
 
 // GET /assets/:id
 
-routes.get('assets/:id', (req, res) => {
-  const index = Number(req.params.id) 
+routes.get('/assets/:id', (req, res) => {
+  const index = Number(req.params.id)
   const filename = path.join(__dirname, 'data.json')
   fs.readFile(filename, 'utf-8', (err, contents) => {
     if (err) return console.log(err)
@@ -63,11 +63,12 @@ routes.post('/assets/edit/:id', (req, res) => {
   const edit = {
     id: id,
     host_name: host_name,
-    ip_address: ip_address
+    ip_address: ip_address,
     subnet_mask: subnet_mask,
     default_gateway: default_gateway,
     live: live
   }
+  
   editAsset(edit, 'data', err => {
     if (err) return res.sendStatus(500)
     res.redirect(`/assets/${id}`)
@@ -75,7 +76,7 @@ routes.post('/assets/edit/:id', (req, res) => {
 })
 
 // EDIT asset
-funtion editAsset (assetInfo, file, callback) {
+function editAsset (assetInfo, file, callback) {
   // open data.json
   const filename = path.join(__dirname, file + '.json')
   fs.readFile(filename, 'uft-8', (err, contents) => {
