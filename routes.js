@@ -38,7 +38,7 @@ routes.get('/assets/:id', (req, res) => {
   fs.readFile(filename, 'utf-8', (err, contents) => {
     if (err) return console.log(err)
     const json = JSON.parse(contents)
-    const asset = json.assetts.find(ast => ast.id === index)
+    const asset = json.assets.find(ast => ast.id === index)
     res.render('./assets/view', asset)
   })
 })
@@ -47,12 +47,16 @@ routes.get('/assets/:id', (req, res) => {
 
 routes.get('/assets/edit/:id', (req, res) => {
   const index = Number(req.params.id)
+  
   const filename = path.join(__dirname, 'data.json')
+  
   fs.readFile(filename, (err, contents) => {
     if (err) return console.log(err)
     const json = JSON.parse(contents)
+    
     const asset = json.assets.find(ast => ast.id === index)
-    res.render('./assets/edit', asset)
+    console.log(asset);
+    res.render(`./assets/edit/${ast.id}`, asset)
   })
 })
 
