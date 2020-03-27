@@ -1,0 +1,87 @@
+.assets {
+    margin: 0 auto;
+    background-color: bisque;
+      /* width: 100%; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; 
+      padding: 0px, 0px, 0px, 0px;
+      justify-content: space-evenly;
+      padding-bottom: 10px;
+      width: 90%;
+      
+  }
+
+  .available {
+    background-color: 'green';
+  }
+  
+  .unavailable {
+    background-color: 'red';
+  }
+  
+  .asset-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: center;
+  }
+
+  .asset-div h1{
+      padding: 0px;
+  }
+  
+  .assets-list {
+      display: flex;
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px; 
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* padding: 0px, 0px, 0px, 0px; */
+      align-items: center;
+      justify-content: center;
+     border-color: black;
+     border-radius: 20px;
+     border-style: solid;
+     width: 200px;
+     height: 200px;
+     margin-bottom: 15px;
+  }
+
+  .asset-view {
+    margin: 0 auto;
+  }
+  
+  .assets-list img{
+    width: 50px;
+    height: 50px;
+  
+    margin-top: 10px;
+    
+  }
+  
+  .secton {
+      width: 100%;
+      background-color: bisque;
+  }
+  
+  body {
+      background-color: bisque;
+  }
+
+  .form-item{
+    display: flex;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+  }
+
+  .live{
+    background-color: rgb(106, 160, 101);
+  }
+
+  .offline{
+    background-color: red;
+  }

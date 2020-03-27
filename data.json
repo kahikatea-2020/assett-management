@@ -3,11 +3,11 @@
     {
       "id": 0,
       "type": "access-point",
-      "host_name": "DEVAP01",
-      "ip_address": "192.168.1.15",
-      "subnet_mask": "255.255.255.0",
-      "default_gateway": "192.168.1.1",
+      "ip_address": "dhdhd",
+      "subnet_mask": "hello",
+      "default_gateway": "hy",
       "image": "/images/ap.png",
+      "host_name": "hs",
       "live": false
     },
     {
@@ -18,17 +18,17 @@
       "subnet_mask": "255.255.255.0",
       "default_gateway": "192.168.1.1",
       "image": "/images/server.png",
-      "live": false
+      "live": true
     },
     {
       "id": 2,
       "type": "printer",
-      "host_name": "DEVNP01",
       "ip_address": "192.168.1.201",
       "subnet_mask": "255.255.255.0",
       "default_gateway": "192.168.1.1",
       "image": "/images/printer.png",
-      "live": false
+      "host_name": "DavesPRT",
+      "live": true
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@
       "subnet_mask": "255.255.255.0",
       "default_gateway": "192.168.1.1",
       "image": "/images/laptop.png",
-      "live": false
+      "live": true
     },
     {
       "id": 4,
@@ -126,9 +126,9 @@
       "host_name": "DEVMOB01",
       "ip_address": "192.168.1.32",
       "subnet_mask": "255.255.255.0",
-      "default_gateway": "192.168.1.1",
+      "default_gateway": "192.168.1.1dsd",
       "image": "/images/mobile.png",
-      "live": false
+      "live": "false"
     },
     {
       "id": 13,
@@ -140,6 +140,5 @@
       "image": "/images/router.png",
       "live": false
     }
-
   ]
 }

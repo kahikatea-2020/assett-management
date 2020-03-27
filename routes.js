@@ -55,8 +55,8 @@ routes.get('/assets/edit/:id', (req, res) => {
     const json = JSON.parse(contents)
     
     const asset = json.assets.find(ast => ast.id === index)
-    console.log(asset);
-    res.render(`./assets/edit/${ast.id}`, asset)
+    //console.log(asset);
+    res.render('./assets/edit', asset)
   })
 })
 
@@ -83,13 +83,12 @@ routes.post('/assets/edit/:id', (req, res) => {
 function editAsset (assetInfo, file, callback) {
   // open data.json
   const filename = path.join(__dirname, file + '.json')
-  fs.readFile(filename, 'uft-8', (err, contents) => {
+  fs.readFile(filename, 'utf-8', (err, contents) => {
     if (err) return callback(new Error('Unable to load data file'))
 
     // parse object
     const json = JSON.parse(contents)
     let itemInfo = json.assets.find(ast => ast.id === assetInfo.id)
-    console.log(assetInfo)
     itemInfo.host_name = assetInfo.host_name
     itemInfo.ip_address = assetInfo.ip_address
     itemInfo.subnet_mask = assetInfo.subnet_mask
