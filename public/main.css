@@ -1,0 +1,45 @@
+.assets {
+  margin: 0 auto;
+  background-color: bisque;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 0px, 0px, 0px, 0px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    width: 90%;
+    
+}
+
+.assets-list {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 0px, 0px, 0px, 0px; */
+   border-color: black;
+   border-radius: 20px;
+   border-style: solid;
+   width: 200px;
+   height: 200px;
+}
+
+.assets-list img{
+  width: 50px;
+  height: 50px;
+
+  margin-top: 10px;
+  
+}
+
+.secton {
+    width: 100%;
+    background-color: bisque;
+}
+
+body {
+    background-color: bisque;
+}
