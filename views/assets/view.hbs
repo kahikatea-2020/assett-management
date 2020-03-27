@@ -1,0 +1,19 @@
+<div class="asset-div">
+    <h1>{{type}}</h1>
+    <ul class="asset-view">
+        
+            
+            <div><img src="{{image}}" alt="{{type}}"></div>
+            <div>Host Name: {{host_name}}</div>
+            <div>IP Address: {{ip_address}}</div>
+            <div>Subnet Mask: {{subnet_mask}}</div>
+            <div>Default Gateway: {{default_gateway}}</div>
+            {{#if live}}
+                <div class="live">Live: {{live}}</div>
+            {{else}}
+                <div class="offline">Live: {{live}}</div>
+             {{/if}}
+             
+            <a href="/assets/edit/{{id}}">Edit</a>
+    </ul>
+</div>

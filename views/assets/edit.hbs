@@ -1,0 +1,37 @@
+<form class="form" action="/assets/edit/{{id}}" method="post">
+  <img class="img-circle" src="{{image}}" alt="{{host_name}}">
+  <label for="name" class="form-item">
+    Host Name:
+    <input type="text" name="host_name" value="{{host_name}}">
+  </label>
+  
+  <label for="ip_address" class="form-item">
+    IP Address:
+    <input type="text" name="ip_address" value="{{ip_address}}">
+  </label>
+  
+  <label for="subnet_mask" class="form-item">
+    Subnet Mask:
+    <input type="text" name="subnet_mask" value="{{subnet_mask}}">
+  </label>
+
+  <label for="default_gateway" class="form-item">
+    Default Gateway:
+    <input type="text" name="default_gateway" value="{{default_gateway}}">
+  </label>
+
+  <label for="live" class="form-item">
+    Live:
+    <input type="text" name="live" value="{{live}}">
+  </label>
+
+  
+  
+  <input type="hidden" name="image" value="{{image}}">
+  
+  <input type="submit" name="" value="Submit">
+</form>
+
+<script>
+
+</script>
